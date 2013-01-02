@@ -1,19 +1,19 @@
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/gsm.mk)
+# Inherit some common COS stuff.
+$(call inherit-product, vendor/cos/config/gsm.mk)
 
 PRODUCT_RELEASE_NAME := glacier
 
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH  := 480
 
-# Inherit common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit common COS stuff.
+$(call inherit-product, vendor/cos/config/common_full_phone.mk)
 
 # Inherit from glacier device
 $(call inherit-product, device/htc/glacier/device.mk)
 
-PRODUCT_NAME := cm_glacier
+PRODUCT_NAME := cos_glacier
 PRODUCT_DEVICE := glacier
 PRODUCT_BRAND := HTC
 PRODUCT_MODEL := myTouch 4G
